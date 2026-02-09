@@ -1,0 +1,211 @@
+body {
+  background: #020402 url("matrix-bg.gif");
+  color: #66ff99;
+  font-family: Verdana, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   Layout Wrapper
+   ========================= */
+
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+  background: #041a0d;
+  border: 5px ridge #00cc66;
+}
+
+/* =========================
+   Header
+   ========================= */
+
+header {
+  background: linear-gradient(to bottom, #003311, #001a0a);
+  text-align: center;
+  padding: 30px 10px;
+  border-bottom: 4px groove #00ff99;
+}
+
+header h1 {
+  font-size: 48px;
+  color: #99ffcc;
+  text-shadow: 2px 2px #000;
+  margin: 0;
+}
+
+header p {
+  font-size: 15px;
+  color: #66cc99;
+  font-style: italic;
+}
+
+/* =========================
+   Navigation
+   ========================= */
+
+nav {
+  background: #000;
+  border-bottom: 3px solid #00ff99;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 0;
+}
+
+nav a {
+  color: #00ff99;
+  font-weight: bold;
+  text-decoration: none;
+  background: #002b16;
+  padding: 8px 16px;
+  border: 2px outset #00cc66;
+}
+
+nav a:hover {
+  background: #00cc66;
+  color: #000;
+  border: 2px inset #00cc66;
+}
+
+/* =========================
+   Sections
+   ========================= */
+
+section {
+  padding: 20px;
+  border-bottom: 2px dashed #009966;
+}
+
+section h2 {
+  font-size: 26px;
+  color: #33ff99;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   About Box
+   ========================= */
+
+.about-box {
+  background: #000;
+  border: 3px inset #009966;
+  padding: 15px;
+}
+
+/* =========================
+   Music Section
+   ========================= */
+
+.music-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.music-table td {
+  border: 2px solid #00cc66;
+  padding: 10px;
+  text-align: center;
+  background: #03140b;
+}
+
+.music-table img {
+  width: 150px;
+  border: 3px ridge #00ff99;
+}
+
+/* =========================
+   Tour Dates
+   ========================= */
+
+.tour-list {
+  background: #000;
+  border: 3px groove #00cc66;
+  padding: 10px;
+}
+
+.tour-item {
+  padding: 8px;
+  border-bottom: 1px dotted #00ff99;
+  font-family: "Courier New", monospace;
+  color: #99ffcc;
+}
+
+/* =========================
+   Buttons
+   ========================= */
+
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 14px;
+  background: linear-gradient(#66ff99, #009966);
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border: 3px outset #ccffdd;
+}
+
+.button:hover {
+  border: 3px inset #ccffdd;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+  text-align: center;
+  background: #000;
+  color: #339966;
+  padding: 15px;
+  font-size: 12px;
+}
+
+footer a {
+  color: #66ffcc;
+}
+
+/* =========================
+   Marquee
+   ========================= */
+
+marquee {
+  background: #003311;
+  color: #99ffcc;
+  font-weight: bold;
+  padding: 6px;
+  border-bottom: 2px solid #00cc66;
+}
+
+.side-flames {
+  position: fixed;
+  top: 0;
+  width: 90px;               /* adjust to GIF width */
+  height: 100vh;
+  background: url("nice-boi.gif") repeat-y;
+  z-index: 999;
+  filter: drop-shadow(0 0 8px #00ff99);
+}
+
+.side-flames.left {
+  left: 0;
+  border-right: 3px groove #00cc66;
+}
+
+.side-flames.right {
+  right: 0;
+  border-left: 3px groove #00cc66;
+}
+
+/* Make room so content isn't covered */
+body {
+  padding-left: 90px;
+  padding-right: 90px;
+}
